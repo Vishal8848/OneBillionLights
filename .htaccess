@@ -1,0 +1,6 @@
+RewriteEngine On
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+
+# Remove PHP (.php) Extension from URL
+RewriteRule ^([^.]+)$ $1.php [NC,L]
